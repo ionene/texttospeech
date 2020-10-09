@@ -11,7 +11,7 @@ class TToS extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Texto a voz'),
-          backgroundColor: Colors.deepOrange,
+          backgroundColor: Colors.deepPurple[300],
         ),
         body: _Home(),
       ),
@@ -49,21 +49,21 @@ class __HomeState extends State<_Home> {
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                       borderSide:
-                          BorderSide(width: 2, color: Colors.deepOrange))),
+                          BorderSide(width: 2, color: Colors.deepPurple))),
               controller: textEditingController,
             ),
           ),
           RaisedButton(
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
-                side: BorderSide(width: 2, color: Colors.deepOrange)),
+                side: BorderSide(width: 2, color: Colors.deepPurple[300])),
             child: Text(
-              'Presiona el botón para escuchar el texto',
+              'Presiona el botón para escuchar',
               style: TextStyle(fontSize: 20, color: Colors.white),
             ),
             onPressed: () => _speak(textEditingController.text),
             padding: EdgeInsets.all(20),
-            color: Colors.deepOrange,
+            color: Colors.deepPurple,
           ),
         ],
       ),
